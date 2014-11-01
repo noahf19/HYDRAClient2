@@ -112,7 +112,7 @@ public class Getter {
                                     StringBuilder sb = new StringBuilder(imgDir.getAbsolutePath());
                                     sb.append(File.separator);
                                     sb.append(imgName);
-                                    sb.append("-picmod.json");
+                                    sb.append(".json");
                                     JsonNode json = mapper.readTree(writer.toString());
                                     String s = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
                                     try (FileWriter fw = new FileWriter(sb.toString())) {
