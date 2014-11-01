@@ -118,7 +118,7 @@ public class Poster {
                                 IOUtils.copy(response.getEntity().getContent(), writer);
                                 String id = writer.toString();
                                 writer.close();
-                                System.out.println(" response id: " + id + " for image "+ img.getName()); 
+                                //System.out.println(" response id: " + id + " for image "+ img.getName()); 
                                 idHash.put(id, img);
                          
                             } catch (Exception ex) {
@@ -145,7 +145,7 @@ public class Poster {
                 });
             }
             latch.await();
-            System.out.println("Shutting down");
+            //System.out.println("Shutting down");
         }
         long end = new Date().getTime();
         System.out.println("Done: posting "+ idHash.size() +" time elapsed: " + (end - start));

@@ -142,9 +142,9 @@ public class Getter {
             }
             latch.await();
             System.out.println("to be processed: "+idHash.size());
-            System.out.println("Shutting down");
+            //System.out.println("Shutting down");
         }
         long end = new Date().getTime();
-        System.out.println("Done: post time elapsed: " + (end - start));
+        //System.out.println("Done: post time elapsed: " + (end - start));
     }
 }
